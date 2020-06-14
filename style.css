@@ -1,4 +1,4 @@
-ul, li, p {
+body, ul, li, p {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,10 +41,15 @@ ul, li, p {
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-  height: 40px;
   margin: 10px auto;
-  padding: 0 15px;
+  padding: 15px;
   background-color: #fff;
+}
+
+@media (max-width:500px) {
+  .person__info {
+    flex-direction: column;
+  }
 }
 
 .people__list {
@@ -60,7 +65,20 @@ ul, li, p {
 }
 
 .person__name {
-  width: 200px;
+  width: 150px;
+}
+
+@media (max-width:500px) {
+  .person__name {
+    margin-top: 15px;
+    width: auto;
+  }
+
+  .person__age,
+  .person__phone,
+  .person__phrase {
+    margin-top: 15px;
+  }
 }
 
 .preview__list {
@@ -68,6 +86,12 @@ ul, li, p {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   justify-items: center;
+}
+
+@media (max-width:550px) {
+  .preview__list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .preview__info{
