@@ -1,5 +1,7 @@
 # Redlab
 
+Link - https://drozhzhyny.github.io/Redlab/
+
 Тестовое задание Frontend
 1. Получен JSON-файл.
 2. Выведены данные в виде таблицы.
